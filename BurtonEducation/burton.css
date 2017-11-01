@@ -50,3 +50,11 @@ article{
 article:last-child{
     padding-right: 0px;
 }
+div.form-group{
+    width:300px;
+    padding:10px;
+}
+input {
+    float: right;
+    width: 150px;
+}
