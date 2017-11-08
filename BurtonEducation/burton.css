@@ -54,7 +54,28 @@ div.form-group{
     width:300px;
     padding:10px;
 }
+.form-group:first-child{
+    margin-top: 30px;
+}
 input {
     float: right;
     width: 150px;
+}
+label.radio-inline{
+    margin-left:50px;
+    margin-right: 20px;
+}
+select.oogkleur{
+    margin-left:50px;
+}
+#omschrijving{
+    position:absolute;
+    margin-left: 35px;
+    vertical-align: top;
+}
+label.eten{
+
+}
+.form-group2{
+    width:300px;
 }
