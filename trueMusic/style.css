@@ -56,7 +56,7 @@ section, footer{
     }
     section#instrumenten{
         width:60%;
-        float:right;
+        float:left;
 
     }
 }
