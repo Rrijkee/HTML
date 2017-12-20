@@ -102,8 +102,7 @@
             display: inline-block;
             transition: background-color 0.6s ease;
         }
-
-        .active, .dot:hover {
+        .dot:hover {
             background-color: #717171;
         }
 
@@ -126,6 +125,22 @@
         body{
             font-family: 'Raleway', sans-serif;
         }
+        .container{
+
+        }
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            padding-top: 500px;
+            padding-left: 200px;
+        }
+        #santa{
+            width: 80px;
+            height: auto;
+        }
+
+
 
     </style>
 </head>
@@ -136,11 +151,37 @@
 <div style="display:none;" id="myDiv" class="animate-bottom">
     <h2>Kerst slideshow</h2>
     <p></p>
+
+    <div class="container">
+        <div id="animate">
+            <p>
+                <button onclick="Move()">Roll me!</button>
+            </p>
+            <script>
+                function Move() {
+                    var elem = document.getElementById("animate");
+                    var pos = 0;
+                    var id = setInterval(frame, 5);
+                    function frame() {
+                        if (pos == 350) {
+                            clearInterval(id);
+                        } else {
+                            pos++;
+                            elem.style.top = pos + 'px';
+                            elem.style.left = pos + 'px';
+                        }
+                    }
+                }
+            </script>
+            <img  id=santa src="../img/funnysanta.gif">
+
+        </div>
     <div class="slideshow-container">
 
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
             <img src="../img/merrychristmas1.jpeg" style="width:100%">
+
         </div>
 
         <div class="mySlides fade">
